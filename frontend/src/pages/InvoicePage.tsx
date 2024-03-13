@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { generatePDF } from '../api-client';
 import { useAppContext } from "../context/AppContext";
-import logo from "../assets/logo.jpg"
 import { useNavigate } from 'react-router-dom';
 
 interface Product {
@@ -63,9 +62,6 @@ const ProductPage = () => {
       </head>
       <body>
         <div class="container mx-auto p-4">
-        <div class='flex justify-end'>
-        <img src="${logo}" className="w-16 h-16" alt="Logo" />
-      </div>
           <table class="text-gray-700 border-none mt-20 table-auto w-full">
             <thead>
               <tr class='text-lg'>
@@ -77,7 +73,7 @@ const ProductPage = () => {
             </thead>
             <tbody class='text-gray-700 font-semibold text-lg'>
     `;
-    products.forEach((product, index) => {
+    products.forEach((product, _index) => {
       const productTotal = product.quantity * product.rate;
       html += `
               <tr >
