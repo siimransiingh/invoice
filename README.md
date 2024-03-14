@@ -7,6 +7,19 @@ The Invoice Generator is a simple web application that allows users to quickly g
 - **Easy to Use**: The interface is intuitive and user-friendly, making it accessible to users of all levels of expertise.
 - **Dynamic Fields**: Easily input product name, quantity and rate.
 - **Download Options**: Generate invoices in PDF
+
+## Demo video
+[click here](https://drive.google.com/file/d/1SSM_BxOT0LhEfjO-xkFonsHm72XQMUjS/view?usp=sharing)
+
+## Technology Used
+
+- TypeScript
+- React
+- MongoDB
+- Express.js
+- Tailwind CSS
+- Puppeteer
+- Vite
 ## Installation
 
 To install and run this project locally, follow these steps:
