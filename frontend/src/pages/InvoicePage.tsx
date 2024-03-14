@@ -197,7 +197,7 @@ const ProductPage = () => {
       </div>
     )
   } else {
-    navigate("/sign-in");
+    navigate("/");
     return null;
   }
 }

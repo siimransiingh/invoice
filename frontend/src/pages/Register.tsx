@@ -24,7 +24,7 @@ const Register = () => {
     const mutation = useMutation(apiClient.register, {
         onSuccess: () => {
             showToast({message: "Registration success", type: "SUCCESS"})
-            navigate("/")
+            navigate("/invoice")
         },
         onError: (error: Error) => {
             showToast({message: error.message, type: "ERROR"})
@@ -35,7 +35,6 @@ const Register = () => {
 
         mutation.mutate(data)
     })
-
     return (
         <form className="flex flex-col gap-5" onSubmit={onSubmit}>
             <h2 className="text-3xl font-bold">Create an account</h2>
@@ -101,6 +100,7 @@ const Register = () => {
             </span>
         </form>
     )
+
 }
 
 export default Register
